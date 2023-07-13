@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    MAIN COLORS-->
+    <color name="red">#f53052</color>
+    <color name="blue">#6279f3</color>
+    <color name="green">#5add9d</color>
+    <color name="orange">#f6b235</color>
+
+    <!--Secondary Colors -->
+    <color name="red2">#ffd4e0</color>
+    <color name="blue2">#e8ebff</color>
+    <color name="green2">#dffaea</color>
+    <color name="orange2">#fcf4b8</color>
+
+<!--    Tertiary Colors-->
+    <color name="red3">#da5673</color>
+    <color name="blue3">#918fcc</color>
+    <color name="green3">#8cd9b6</color>
+    <color name="oragne3">#eece6d</color>
+</resources>

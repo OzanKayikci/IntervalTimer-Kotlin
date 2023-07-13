@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WORK"
+                    android:textAlignment="center"
+                    android:textColor="@color/green2"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/btnPlusHours"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/green"
+                                android:padding="0dp"
+                                android:text="+"
+                                android:textAlignment="center"
+                                android:textColor="@color/blue2"
+                                android:textSize="24sp"
+                                app:cornerRadius="0dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/etHours"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/etHours"
+                                android:layout_width="100dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="00"
+                                android:hint="Hours"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textColor="@color/blue2"
+                                android:textColorHint="@color/blue2"
+                                android:textSize="24sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0"
+                            android:text=":"
+                            android:textColorHint="@color/blue2"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etMinutes"
+
+                                android:layout_width="100dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="00"
+                                android:hint="Minutes"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textColor="@color/blue2"
+                                android:textColorHint="@color/blue2"
+                                android:textSize="24sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Button
+                                android:id="@+id/btnMinusHours"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/red"
+                                android:padding="0dp"
+                                android:text="-"
+                                android:textAlignment="center"
+                                android:textColor="@color/blue2"
+                                android:textSize="24sp"
+                                app:cornerRadius="0dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/etMinutes"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REST"
+                    android:textAlignment="center"
+                    android:textColor="@color/green2"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/btnPlusHours2"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/green"
+                            android:padding="0dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textSize="24sp"
+                            app:cornerRadius="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/etHours2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/etHours2"
+                            android:layout_width="100dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:hint="Hours"
+                            android:text="00"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textColorHint="@color/blue2"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.9"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0"
+                        android:text=":"
+                        android:textColorHint="@color/blue2"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/etMinutes2"
+
+                            android:layout_width="100dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:hint="Minutes"
+                            android:text="00"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textColorHint="@color/blue2"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnMinusHours2"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/red"
+                            android:padding="0dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textSize="24sp"
+                            app:cornerRadius="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/etMinutes2"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/sets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SETS"
+                    android:textAlignment="center"
+                    android:textColor="@color/green2"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <Button
+                            android:id="@+id/setPlus"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/green"
+                            android:padding="0dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textSize="24sp"
+                            app:cornerRadius="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/setText"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/setText"
+                            android:layout_width="220dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="0"
+
+                            android:hint="SET"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textColorHint="@color/blue2"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/setMinus"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/red"
+                            android:padding="0dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue2"
+                            android:textSize="24sp"
+                            app:cornerRadius="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/setText"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/green"
+            android:text="START"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
